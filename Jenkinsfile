@@ -3,7 +3,7 @@ agent any
 stages {
   stage('LintHTML') {
     steps{
-    sh "tidy -q -e *.html"
+    sh 'tidy -q -e *.html'
     }
   }
   stage('Upload to AWS') {
